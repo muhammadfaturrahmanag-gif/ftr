@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Ekstrakurikuler Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Absensi Ekstrakurikuler 🏀 Futsal</h1>
+        
+        <div class="header-info">
+            <label for="dateInput">Tanggal:</label>
+            <input type="date" id="dateInput" value="">
+            <label for="activitySelect">Kegiatan:</label>
+            <select id="activitySelect">
+                <option value="Futsal">Futsal</option>
+                <option value="Pramuka">Pramuka</option>
+                <option value="Sains">Klub Sains</option>
+                </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama Siswa</th>
+                    <th>Kehadiran</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody id="attendanceList">
+                </tbody>
+        </table>
+
+        <button onclick="saveAttendance()">Simpan Absensi</button>
+        <div id="message" class="message-area"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
